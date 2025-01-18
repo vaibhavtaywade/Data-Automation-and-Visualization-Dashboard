@@ -25,4 +25,22 @@ Run the following script in RStudio to install the necessary packages:
 required_packages <- c("rvest", "httr", "dplyr", "ggplot2", "shiny", "lubridate", "plotly", "tidyr")
 new_packages <- required_packages[!(required_packages %in% installed.packages()[, "Package"])]
 if (length(new_packages)) install.packages(new_packages)
+```
+
+### Run the Script
+- Copy the provided code into an R script file (india_australia_trade_dashboard.R).
+- Run the script in RStudio by clicking the "Run" button or using source("india_australia_trade_dashboard.R") in the console.
+
+## Using the Shiny App
+Once the script is executed, the app will automatically open in your browser with the title "India-Australia Trade Dashboard". The features available in the app are:
+
+- Select date ranges for analysis.
+- Choose specific product categories for visualization.
+- View visualizations such as:
+  - Monthly Trends in trade volumes (exports/imports).
+  - Breakdown by product categories.
+  - Year-over-Year changes in trade volumes.
+- Update the trade data with the **Update Data** button.
+- Export the data shown in the dashboard using the **Download Data** button.
+
 
